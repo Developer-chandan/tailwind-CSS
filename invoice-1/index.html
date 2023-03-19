@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinkhaven 2.0</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header start   -->
+    <header>
+        <div class="bg-lightGreen border-b-[1px] border-borderGray">
+            <div class="container max-w-[880px] px-4 md:grid md:grid-cols-3 gap-10 pt-14 pb-8 ">
+                <!-- header_left  -->
+                <div class="header_left col-span-2 flex flex-col justify-center mb-4 md:md-0">
+                    <h1 class="text-primary text-[28px] leading-8 font-bold">Example Co
+                    </h1>
+                    <h3 class="text-gray text-[28px]">Factuur INV/00060
+                    </h3>
+                </div> <!-- header_left end  -->
+
+                <!-- header_right -->
+                <div
+                    class="header_right border-[3px] flex justify-between flex-wrap items-center md:block border-primary rounded-[10px] bg-white text-center py-[3px] px-[20px] w-full">
+                    <p class="pt-[10px] pb-[8px] border-[#eee] md:border-b-[1px] text-primary">Openstaand bedrag </p>
+                    <h1 class=" text-[18px] sm:text-[32px] text-primary font-bold">€ 907,50 </h1>
+                </div>
+                <!-- header_right end -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- header end  -->
+
+
+    <main>
+        <!-- invoice details -->
+        <div class="details_part container max-w-[880px] px-4 md:grid md:grid-cols-3 gap-10 pt-6 md:pt-14 pb-8">
+            <!-- body_details -->
+            <div class="details_left col-span-2 md:pr-[88px] pb-4 md:pb-0" >
+                <p class="text-blackText">Er staat een factuur klaar van Tinkhaven 2.0 met een totaalbedrag van €
+                    907,50. De factuur is op diverse manieren (online) te betalen. Rechts staat de optie om de factuur
+                    te downloaden in PDF of UBL formaat.</p>
+
+            </div>
+            <div class="details_right bg-[#f4f4f4] rounded-md py-[16px] px-[33px]">
+                <div class="d-items">
+
+                    <p class="text-blue cursor-pointer py-[2px]"><i
+                            class="fa-regular text-blackIcon fa-file-pdf mr-[12px]"></i> PDF downloaden</p>
+                    <p class="text-blue cursor-pointer py-[2px]"><i
+                            class="fa-solid text-blackIcon fa-code mr-[7px]"></i> UBL downloaden</p>
+                </div>
+            </div>
+
+
+
+            <!-- body_details end-->
+
+
+        </div> <!-- invoice details end-->
+
+
+        <!-- invoice table and payment condition -->
+        <div class="mx-3 md:mx-0">
+            <div class="container max-w-[890px] p-4 md:my-8 md:grid md:grid-cols-5 gap-5 bg-lightGreen border-borderGray border-[1px] rounded-md">
+               <!-- payment condition and info -->
+                <div class="invoice_conditions col-span-3 md:border-r-[1px] border-borderGray">
+                    <h3 class="text-[1.2rem] pb-2 text-primary font-semibold
+                  ">Overschrijven </h3>
+                    <P class="text-blackText mb-4 md:pr-[2rem]">Het openstaande bedrag kan overgemaakt worden naar het
+                        rekeningnummer dat vermeld staat in de PDF.</P>
+    
+    
+                    <div class="payment_condition_accordion mb-2 overflow-hidden relative">
+                        <p class="text-blue mb-1 inline-block hover:text-primary">Bekijk de betaalconditie</p>
+                        <input type="checkbox" class="hover:text-primary absolute max-h-[18px] left-0 top-[4px] peer w-[166px] cursor-pointer opacity-0">
+                       
+                        <p class="text-blackText md:pr-10 max-h-0 peer-checked:max-h-screen transition-all duration-1000">Betaling binnen 30 dagen o.v.v. betalingskenmerk
+                            +++000/0000/06060+++</p>
+                    </div>
+                    <div class="scan-info hidden md:block">
+                       
+                        <h3 class="text-primary font-semibold text-[1.2rem] mb-3">
+                            Overschrijven met bank-app
+    
+                        </h3>
+                        <div class="scan-box grid grid-cols-5">
+                            <img src="img/scan-info.png" class="w-full col-span-2 border-borderGray rounded-md border-[1px]"
+                                alt="">
+                            <p class="text-blackText col-span-3 pl-6">Scan met een bank-app</p>
+                        </div>
+                    </div>
+                </div><!-- payment condition and info -->
+    
+                <!-- invoice table  -->
+                <div class="invoice_table col-span-2">
+                    <table class="w-full text-blackText">
+                        <tbody>
+                            <tr>
+                                <td>Afzender</td>
+                                <td class="text-right text-primary">Example Co.</td>
+                            </tr>
+                            <tr>
+                                <td>Factuur</td>
+                                <td class="text-right text-primary">INV/00060</td>
+                            </tr>
+                            <tr>
+                                <td>Datum</td>
+                                <td class="text-right text-primary">17-03-2023</td>
+                            </tr>
+                            <tr>
+                                <td>Vervaldatum</td>
+                                <td class="text-right text-primary">16-04-2023</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Totaalbedrag</td>
+                                <td class="text-right text-primary font-bold">€ 907,50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- invoice table end  -->
+            </div> 
+    
+    
+        </div><!-- invoice table and payment condition end-->
+      
+
+
+
+        <!-- bottom notice  -->
+        <div class="container max-w-[890px] px-4 md:grid grid-cols-3 justify-end my-8">
+            <div
+                class="bottom_notice_wrap flex md:justify-between col-end-4 border-borderGray border-[1px] p-4 pl-2 pr-10 rounded-md">
+                <div class="iconn mx-2">
+                    <i class="fa-solid fa-lock text-[#F5A623] text-[1.6rem]"></i>
+                </div>
+                <div class="content leading-5">
+                    <small class="text-blackText">
+                        Connection secured with 256bit encryption by FactuurSturen.be.
+                    </small>
+                    <a class="text-blue" target="_blank"
+                        href="https://www.factuursturen.be/dienstverlening-uitgelegd?a=202"><small>What is
+                            FactuurSturen.be?</small></a>
+                </div>
+
+            </div>
+        </div><!-- bottom notice end -->
+
+    </main>
+    <!-- footer  -->
+    <footer class=" text-center border-t-[1px] border-borderGray">
+        <p class="py-4 pb-6 text-blackText text-center text-[.8rem]"> <i class="fa-solid fa-leaf mr-3"></i>
+            <a class="inline-block hover:text-blue hover:decoration-1 hover:underline
+    " href="https://www.factuursturen.be/dienstverlening-uitgelegd?a=202" target="_blank">Powered by
+                FactuurSturen.be</a>
+        </p>
+    </footer> <!-- footer end  -->
+
+
+
+
+
+
+
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+
+                container: {
+                    center: true,
+                },
+                screens: {
+                    'sm': '575px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '992px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1200px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+                extend: {
+                    colors: {
+                        primary: 'rgb(85,187,85)',
+                        blue: "#08f",
+                        gray: "#777",
+                        lightGreen: "rgba(85,187,85,0.05)",
+                        borderGray: "rgba(85,187,85,0.25)",
+                        white: "#ffff",
+                        blackText: "#575656",
+                        blackIcon: "#999"
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/445c1c83cf.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

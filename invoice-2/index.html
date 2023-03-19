@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POM</title>
+    <!-- tailwind css cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class=""
+    style="background: url('img/Bolt.jpg');background-repeat: no-repeat; background-position:center;background-size:100%;background-attachment: fixed;">
+
+    <header>
+
+        <div class="bg-lightGray py-3 fixed w-full top-0" style="box-shadow:1px 5px 26px 8px #00000033">
+            <p class="text-center">🔒 100% secure payment with POM. The payment link in the address bar always contains
+                <strong>app.pom.be</strong> <a class="text-green"
+                    href="https://community.pom.be/hc/nl-be/articles/360011450099-Waarom-betalen-via-een-POM-QR-code-of-betaallink-100-veilig-is-"
+                    target="_blank">Read more</a> .</p>
+        </div>
+
+    </header>
+
+    <main class="mt-[8rem]">
+        <div class="container max-w-[960px] bg-white p-12 rounded-lg " style="box-shadow: 0px 0px 27px 7px #0000003d">
+            <!-- top content -->
+            <div class="top_content flex justify-between items-center pb-7">
+                <div class="title flex items-center">
+                    <span class="w-[18px] h-[18px] inline-block mr-3 bg-primary rounded-[100%]"></span>
+                    <h1 class="text-[2.2rem] text-primary">Herinnering
+                    </h1>
+                </div>
+                <img src="img/heart.black.png" class="w-[60px]" alt="">
+            </div><!-- top content -->
+
+
+            <!-- invoice content  / middle part-->
+            <div class="invoice_content border-borderColor p-5 border-[1px] rounded-lg grid grid-cols-2 px-12">
+                <!-- left_side_boxs -->
+                <div class="left_side_box">
+                    <div class="desc_box">
+                        <p class="text-gray text-[.9rem] leading-[18px]	">Beschrijving</p>
+                        <h3 class="text-[1.2rem] text-darkGray tracking-wide">CUST0001
+                        </h3>
+                    </div>
+                    <div class="desc_box mt-6">
+                        <p class="text-gray text-[.9rem] leading-[18px]	">Bedrag</p>
+                        <h3 class="text-[1.2rem] text-darkGray tracking-wide">€ 1.000,35
+
+                        </h3>
+                    </div>
+                </div> <!-- left_side_boxs end-->
+                <!-- right_side_boxs -->
+                <div class="right_side_box">
+                    <div class="desc_box">
+                        <p class="text-gray text-[.9rem] leading-[18px]	">Mededeling</p>
+                        <h3 class="text-[1.2rem] text-darkGray tracking-wide">+++XXX/XXXX/XXXXX+++
+
+                        </h3>
+                    </div>
+                    <div class="desc_box mt-6">
+                        <p class="text-gray text-[.9rem] leading-[18px]	">Vervaldatum</p>
+                        <h3 class="text-[1.2rem] text-darkGray tracking-wide">28-3-2023
+
+
+                        </h3>
+                    </div>
+                </div> <!-- right_side_boxs end-->
+
+            </div><!-- invoice content end / middle part  end-->
+
+
+
+        <!-- bottom content-->
+        <div class="bottom_content py-3">
+            <h2 class="text-[1.2rem] font-bold text-darkGray">Meteen betalen aan Bolt Energie BV
+            </h2>
+            <div class="bancontact flex items-center justify-center cursor mt-2 mb-6 p-2 bg-[#e9f7e9] border-[1px] border-[#ebf0ee] rounded-lg max-w-full  md:max-w-[240px]" >
+                <img src="img/Bancontact.png" class="h-[38px]" alt="">
+                <p class="text-primary ml-4">Bancontact</p>
+            </div>
+
+            <button
+            type="button"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="inline-block rounded-md bg-primary px-16 py-3 text-md font-medium leading-normal text-white  transition duration-150 ease-in-out hover:bg-green  focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+            Naar Betaling
+          </button>
+        </div>
+        <!-- bottom content end-->
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <!-- tailwind css custom config  -->
+    <script>
+        tailwind.config = {
+            theme: {
+
+                container: {
+                    center: true,
+                },
+                screens: {
+                    'sm': '575px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '992px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1200px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+                extend: {
+                    colors: {
+                        primary: '#008147',
+                        lightGray: "#edf7ec",
+                        green: "#2baf2b",
+                        white: "white",
+                        gray: '#6e7874',
+                        darkGray: '#404a46',
+                        borderColor: '#bfc9c5'
+
+                    }
+                }
+            }
+        }
+    </script> <!-- tailwind css custom config end -->
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/445c1c83cf.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
